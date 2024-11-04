@@ -3,11 +3,11 @@ module mux2_1(
 );
 
   parameter WIDTH = 1 ;
-  //parameter WDITH_SELECTION = $clog2(WDITH) ;
+  //parameter WIDTH_SELECTION = $clog2(WIDTH) ;
 
-  input [WDITH-1:0]A,B;
+  input [WIDTH-1:0]A,B;
   input SELECT;
-  output [WDITH-1:0]OUT;
+  output [WIDTH-1:0]OUT;
 
-  assign OUT = (SELECT) B : A;   
+  assign OUT = (SELECT) ? B : A;   
 endmodule

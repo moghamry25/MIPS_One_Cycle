@@ -6,7 +6,7 @@ module ALU(
 
     input [WIDTH-1:0]A,B;
     input [2:0]SELECT;
-    output reg[WDITH-1:0]OUT;
+    output reg[WIDTH-1:0]OUT;
     output reg ZERO;
 
     always @(*) begin
@@ -24,7 +24,7 @@ module ALU(
                 OUT = A - B ; 
             end
             3'b111:begin
-                OUT = ( A < B ) 1 : 0 ;
+                OUT = ( A < B ) ? 1 : 0 ;
             end
         endcase
         if(!OUT)begin

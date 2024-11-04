@@ -1,7 +1,7 @@
 module ALUop(
     input [5:0]func,
     input [1:0]aluop,
-    output [2:0]op
+    output reg [2:0]op
 );
     
     always @(*) begin
@@ -9,9 +9,9 @@ module ALUop(
             op = 3'b010 ;
         end
         else if (aluop == 2'b01) begin
-            op = 3'110 ;
+            op = 3'b110 ;
         end
-        else if (aluop == 2'10 ) begin
+        else if (aluop == 2'b10 ) begin
             if (func == 6'b100_000) begin
                 op = 3'b010;
             end
