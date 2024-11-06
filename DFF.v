@@ -1,10 +1,10 @@
 module DFF(
     D,Q,clk,rst
 );
-parameter WDITH = 32 ;  
-input [WDITH-1:0]D;
+parameter WIDTH = 32 ;  
+input [WIDTH-1:0]D;
 input clk,rst;
-output reg[WDITH-1:0]Q;
+output reg[WIDTH-1:0]Q;
 
 always @(posedge clk) begin
     if (!rst) begin
