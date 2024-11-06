@@ -9,6 +9,10 @@ output reg[WDITH-1:0]RD;
 
 reg [WDITH-1:0]mem[1023:0];
 
+initial begin
+    $writememh("memory_contents.hex", mem);
+end
+
 always @(posedge clk) begin
     
     if(WE)begin

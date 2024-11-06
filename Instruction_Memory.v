@@ -7,7 +7,10 @@ module Instruction_Memory(
     output [WIDTH-1:0]RD;
 
     reg [WIDTH-1:0]mem[255:0];
-
+    initial begin
+     $readmemh("MEM_INSTR.dat",mem);   
+    end
+    
     assign RD = mem[A];
 
 endmodule
