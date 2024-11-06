@@ -2,12 +2,12 @@ module Data_Memory(
     A , WD , clk , WE , RD
 );
     
-parameter WDITH = 32 ;    
+parameter WIDTH = 32 ;    
 input clk , WE ;
-input [WDITH-1:0]WD,A;
-output reg[WDITH-1:0]RD;
+input [WIDTH-1:0]WD,A;
+output reg[WIDTH-1:0]RD;
 
-reg [WDITH-1:0]mem[1023:0];
+reg [WIDTH-1:0]mem[1023:0];
 
 initial begin
     $writememh("memory_contents.hex", mem);

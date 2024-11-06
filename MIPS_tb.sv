@@ -3,10 +3,10 @@ module MIPS_tb;
   logic clk ,rst;
   logic [31:0]Result;
 
-  datapath MIPS(clk,rst,Result)
+  datapath MIPS(clk,rst,Result);
      
   initial begin
-    
+    clk = 0 ;
     forever begin
         #10 clk = ~clk;
     end
@@ -14,7 +14,10 @@ module MIPS_tb;
 
     initial begin
 
-    #160
+    rst = 0 ;
+    @(negedge clk);    
+    rst = 1 ;
+    #160;
     $stop;
     end
 

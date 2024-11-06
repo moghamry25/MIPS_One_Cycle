@@ -8,9 +8,13 @@ module Instruction_Memory(
 
     reg [WIDTH-1:0]mem[255:0];
     initial begin
-     $readmemh("MEM_INSTR.dat",mem);   
+     $readmemh("MEM_INSTR.dat",mem);
+     mem[0]=32'h10a7000a;
+   
+     mem[1]=32'h10a7000a;
+     mem[2]=32'h10a7000a;
     end
     
-    assign RD = mem[A];
+    assign RD = mem[A/4];
 
 endmodule

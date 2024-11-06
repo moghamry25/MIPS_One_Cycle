@@ -10,3 +10,4 @@ mux2_1.v
 Register_File.v
 shift2.v
 signextend.v
+MIPS_tb.sv
