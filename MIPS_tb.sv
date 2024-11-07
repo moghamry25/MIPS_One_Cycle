@@ -17,7 +17,7 @@ module MIPS_tb;
     rst = 0 ;
     @(negedge clk);    
     rst = 1 ;
-    #160;
+    #300;
     $stop;
     end
 

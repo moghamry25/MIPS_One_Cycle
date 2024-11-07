@@ -12,7 +12,7 @@ module Register_File (
         RD2 = Register_File[A2];
     end
     initial begin
-           $writememh("Reg_contents.hex", Register_File); 
+           $writememh("Reg_contents.dat", Register_File); 
     end
     integer i = 0;
     always @(posedge clk) begin

@@ -6,13 +6,14 @@ module datapath(
     parameter WIDTH = 32 ;
      
     wire [WIDTH-1:0]input1_mux1,out_mux1;
-    wire [27:0]OUT_SHIFTER1;
+   
     wire [WIDTH-1:0]PC_plus4;
     wire [WIDTH-1:0]instr;
-    wire MemtoReg,MemWrite,Branch,Jump,ALUControl,ALUSrc,RegDst,RegWrite;
+    wire MemtoReg,MemWrite,Branch,Jump,ALUSrc,RegDst,RegWrite;
+    wire [2:0]ALUControl;
     Control_Unit CPU(instr[31:26],instr[5:0],MemtoReg,MemWrite,Branch,Jump,ALUControl,ALUSrc,RegDst,RegWrite);
-        //shift2 #(.WIDTH(26))SHIFTER_JUMP(instr[25:0],OUT_SHIFTER1);
-wire [31:0]addr;
+       
+    wire [31:0]addr;
     mux2_1 #(.WIDTH(WIDTH))mux1(input1_mux1,addr,Jump,out_mux1);
    
    assign addr = {PC_plus4[31:28],instr[25:0],2'b00};

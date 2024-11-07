@@ -1,0 +1,57 @@
+{D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/mux2_1.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/mux2_1.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/shift2.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/shift2.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module shift2
+
+Top level modules:
+	shift2
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/DFF.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/DFF.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module DFF
+
+Top level modules:
+	DFF
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/signextend.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/signextend.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module signextend
+
+Top level modules:
+	signextend
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/ALU.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/ALU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/Control_Unit.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/Control_Unit.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/Adder.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/Adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/ALUOP.V} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Design/projects/Project 5 - MIPS/MIPS_One_Cycle/ALUOP.V}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALUop
+
+Top level modules:
+	ALUop
+
+} {} {}}
