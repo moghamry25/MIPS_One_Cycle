@@ -11,9 +11,7 @@ module Register_File (
         RD1 = Register_File[A1];
         RD2 = Register_File[A2];
     end
-    initial begin
-           $writememh("Reg_contents.dat", Register_File); 
-    end
+   
     integer i = 0;
     always @(posedge clk) begin
         if(!rst)begin

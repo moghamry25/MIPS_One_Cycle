@@ -12,6 +12,6 @@ module Instruction_Memory(
    
     
     
-    assign RD = mem[A];
+    assign RD = mem[A/4];
 
 endmodule

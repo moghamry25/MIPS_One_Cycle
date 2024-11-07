@@ -9,9 +9,7 @@ output reg[WIDTH-1:0]RD;
 
 reg [WIDTH-1:0]mem[1023:0];
 
-initial begin
-    $writememh("memory_contents.dat", mem);
-end
+
 
 always @(posedge clk) begin
     
