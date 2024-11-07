@@ -5,11 +5,11 @@ module Data_Memory(
 parameter WIDTH = 32 ;    
 input clk , WE ;
 input [WIDTH-1:0]WD,A;
-output reg[WIDTH-1:0]RD;
+output [WIDTH-1:0]RD;
 
 reg [WIDTH-1:0]mem[1023:0];
 
-
+assign  RD = mem[A] ;
 
 always @(posedge clk) begin
     
@@ -17,7 +17,7 @@ always @(posedge clk) begin
         mem[WD] <= A ;
     end
     else begin
-        RD <= mem[WD] ;
+       
     end
 
 end
